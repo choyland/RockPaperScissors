@@ -1,0 +1,17 @@
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\bin\Debug\netcoreapp2.0\NUnit3.TestAdapter.dll
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\bin\Debug\netcoreapp2.0\NUnit3.TestAdapter.pdb
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\bin\Debug\netcoreapp2.0\nunit.engine.netstandard.dll
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\bin\Debug\netcoreapp2.0\Mono.Cecil.dll
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\bin\Debug\netcoreapp2.0\RockPaperScissors.Business.Tests.deps.json
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\bin\Debug\netcoreapp2.0\RockPaperScissors.Business.Tests.runtimeconfig.json
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\bin\Debug\netcoreapp2.0\RockPaperScissors.Business.Tests.runtimeconfig.dev.json
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\bin\Debug\netcoreapp2.0\RockPaperScissors.Business.Tests.dll
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\bin\Debug\netcoreapp2.0\RockPaperScissors.Business.dll
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\bin\Debug\netcoreapp2.0\RockPaperScissors.Business.pdb
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\obj\Debug\netcoreapp2.0\RockPaperScissors.Business.Tests.csprojResolveAssemblyReference.cache
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\obj\Debug\netcoreapp2.0\RockPaperScissors.Business.Tests.csproj.CoreCompileInputs.cache
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\obj\Debug\netcoreapp2.0\RockPaperScissors.Business.Tests.AssemblyInfoInputs.cache
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\obj\Debug\netcoreapp2.0\RockPaperScissors.Business.Tests.AssemblyInfo.cs
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\bin\Debug\netcoreapp2.0\RockPaperScissors.Business.Tests.pdb
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\obj\Debug\netcoreapp2.0\RockPaperScissors.Business.Tests.dll
+E:\Samples\RockPaperScissors\RockPaperScissors.Business.Tests\obj\Debug\netcoreapp2.0\RockPaperScissors.Business.Tests.pdb
