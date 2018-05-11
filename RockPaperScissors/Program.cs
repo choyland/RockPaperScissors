@@ -1,6 +1,9 @@
-﻿using Autofac;
+﻿using System;
+using Autofac;
 using RockPaperScissors.Business;
 using RockPaperScissors.Business.DataProvider;
+using RockPaperScissors.Business.Model.Implementation;
+using RockPaperScissors.Business.Model.Interfaces;
 
 namespace RockPaperScissors
 {
@@ -25,7 +28,20 @@ namespace RockPaperScissors
             builder.RegisterType<OverallScoreCalculator>().As<IOverallScoreCalculator>();
             builder.RegisterType<ResultCalculator>().As<IResultCalculator>();
             builder.RegisterType<GameMoveOutcomeDataProvider>().As<IGameMoveOutcomeDataProvider>();
-            
+            builder.RegisterType<TacticalMoveGenerator>().As<ITacticalMoveGenerator>();
+            builder.RegisterType<RandomMoveGenerator>().As<IRandomMoveGenerator>();
+
+            // computer players with named parameters
+            builder.RegisterType<RandomComputerPlayer>().As<IComputerPlayer>().Named<IComputerPlayer>("r");
+            builder.RegisterType<TacticalComputerPlayer>().As<IComputerPlayer>().Named<IComputerPlayer>("t");
+
+            builder.Register<Func<string, IComputerPlayer>>(delegate (IComponentContext context)
+            {
+                var cc = context.Resolve<IComponentContext>();
+
+                return cc.ResolveNamed<IComputerPlayer>;
+            });
+
             return builder.Build();
         }
     }

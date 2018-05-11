@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using RockPaperScissors.Business;
 using RockPaperScissors.Business.Enum;
 using RockPaperScissors.Business.Model.Implementation;
@@ -10,24 +8,26 @@ using RockPaperScissors.Helpers;
 
 namespace RockPaperScissors
 {
-    public interface IGame
-    {
-        void StartGame();
-    }
     public class Game : IGame
     {
         private readonly IOverallScoreCalculator _overallScoreCalculator;
         private readonly IResultCalculator _resultCalculator;
+        private readonly Func<string, IComputerPlayer> _computerPlayerFactory;
 
-        // TODO Get from configuration
-        private const int BestOf = 3;
         private readonly INormalPlayer _normalPlayer;
         private IComputerPlayer _computerPlayer;
 
-        public Game(IOverallScoreCalculator overallScoreCalculator, IResultCalculator resultCalculator)
+        // TODO Get from configuration
+        private const int BestOf = 3;
+
+        private int _roundsPlayed;
+
+
+        public Game(IOverallScoreCalculator overallScoreCalculator, IResultCalculator resultCalculator, Func<string, IComputerPlayer> computerPlayerFactory)
         {
             _overallScoreCalculator = overallScoreCalculator;
             _resultCalculator = resultCalculator;
+            _computerPlayerFactory = computerPlayerFactory;
             _normalPlayer = new NormalPlayer();
         }
 
@@ -37,9 +37,10 @@ namespace RockPaperScissors
             ChooseComputerPlayerType();
             DisplayRules();
 
-            while (!_overallScoreCalculator.HasAPlayerWon(BestOf, _normalPlayer, _computerPlayer))
+            while (!_overallScoreCalculator.HasAPlayerWon(BestOf, _normalPlayer, _computerPlayer) && _roundsPlayed < BestOf)
             {
                 PlayRound();
+                _roundsPlayed++;
             }
 
             DisplayFinalResults();
@@ -48,7 +49,22 @@ namespace RockPaperScissors
 
         private void DisplayFinalResults()
         {
-            
+            Console.WriteLine($"Game over! You scored : {_normalPlayer.Wins} | Computer scored : {_computerPlayer.Wins}");
+            var overallResult = _overallScoreCalculator.CalculateOverallWinner(_normalPlayer, _computerPlayer);
+
+            if (overallResult == Result.Draw)
+            {
+                Console.WriteLine("It's a draw!");
+            }
+            else if (overallResult == Result.Player1Wins)
+            {
+                Console.WriteLine("You won!");
+            }
+            else
+            {
+                Console.WriteLine("Computer won!");
+            }
+            Console.ReadLine();
         }
 
         private void PlayRound()
@@ -59,32 +75,32 @@ namespace RockPaperScissors
             {
                 Console.WriteLine("Please enter your choice:");
                 var choice = Console.ReadLine();
-                chosenMove = GameMoveInputMapping.GameMoves.FirstOrDefault(x => x.InputValue == choice);
+                chosenMove = GameInputMapping.GameMoves.FirstOrDefault(x => x.InputValue == choice);
                 if (chosenMove == null)
                 {
                     Console.WriteLine("That was an invalid choice, please try again");
                 }
             }
 
-            var computerGameMove =
-                GameMoveInputMapping.GameMoves.FirstOrDefault(x => x.GameMove == _computerPlayer.GetComputerMove());
+            var computerGameMove = _computerPlayer.GetComputerMove();
+            var computerGameMoveViewModel = GameInputMapping.GameMoves.FirstOrDefault(x => x.GameMove == computerGameMove);
 
-            if (computerGameMove == null)
+            if (computerGameMoveViewModel == null)
             {
                 throw new ApplicationException("Error Generating computer choice");
             }
 
-            var result = _resultCalculator.CalculateRoundResult(chosenMove.GameMove, computerGameMove.GameMove);
+            var result = _resultCalculator.CalculateRoundResult(chosenMove.GameMove, computerGameMove);
 
-            Console.WriteLine($"Computer chose: {computerGameMove.FriendlyName}");
+            Console.WriteLine($"Computer chose: {computerGameMoveViewModel.FriendlyName}");
 
             var resultString = string.Empty;
-            if (result == RoundResult.Draw)
+            if (result == Result.Draw)
             {
                 resultString = "Draw!";
                 
             }
-            else if (result == RoundResult.Player1Wins)
+            else if (result == Result.Player1Wins)
             {
                 resultString = "You win!";
                 IncrementWins(_normalPlayer);
@@ -107,7 +123,7 @@ namespace RockPaperScissors
         {
             Console.WriteLine($"The game will be best of {BestOf}");
             Console.WriteLine("You will be prompted to enter your choice of rock paper scissors and you can submit your choice using one of the following:");
-            foreach (var gameMoveViewModel in GameMoveInputMapping.GameMoves)
+            foreach (var gameMoveViewModel in GameInputMapping.GameMoves)
             {
                 Console.WriteLine($"{gameMoveViewModel.InputValue} for {gameMoveViewModel.FriendlyName}");
             }
@@ -127,17 +143,9 @@ namespace RockPaperScissors
             Console.WriteLine("You can play against a random or a tactical computer. Enter \"r\" for random or \"t\" for tactical");
             var computerPlayerChoice = Console.ReadLine();
 
-            //validate input
+            // TODO validate input
 
-            if (computerPlayerChoice == "r")
-            {
-                _computerPlayer = new RandomComputerPlayer();
-            }
-
-            if (computerPlayerChoice == "t")
-            {
-                _computerPlayer = new TacticalComputerPlayer();
-            }
+            _computerPlayer = _computerPlayerFactory(computerPlayerChoice);
         }
     }
 }

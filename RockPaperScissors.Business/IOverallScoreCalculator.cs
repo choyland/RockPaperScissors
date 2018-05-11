@@ -5,17 +5,17 @@ namespace RockPaperScissors.Business
 {
     public interface IOverallScoreCalculator
     {
-        RoundResult CalculateOverallWinner(IPlayer player1, IPlayer player2);
+        Result CalculateOverallWinner(IPlayer player1, IPlayer player2);
         bool HasAPlayerWon(int bestOf, IPlayer player1, IPlayer player2);
     }
 
     public class OverallScoreCalculator : IOverallScoreCalculator
     {
-        public RoundResult CalculateOverallWinner(IPlayer player1, IPlayer player2)
+        public Result CalculateOverallWinner(IPlayer player1, IPlayer player2)
         {
-            if (player1.Wins == player2.Wins) return RoundResult.Draw;
+            if (player1.Wins == player2.Wins) return Result.Draw;
 
-            return player1.Wins > player2.Wins ? RoundResult.Player1Wins : RoundResult.Player2Wins;
+            return player1.Wins > player2.Wins ? Result.Player1Wins : Result.Player2Wins;
         }
 
         public bool HasAPlayerWon(int bestOf, IPlayer player1, IPlayer player2)

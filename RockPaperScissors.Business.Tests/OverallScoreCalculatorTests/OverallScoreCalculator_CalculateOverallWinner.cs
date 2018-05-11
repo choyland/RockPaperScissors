@@ -33,7 +33,7 @@ namespace RockPaperScissors.Business.Tests.OverallScoreCalculatorTests
             var result = _overallScoreCalculator.CalculateOverallWinner(player1.Object, player2.Object);
 
             // Assert
-            Assert.AreEqual(RoundResult.Player1Wins, result);
+            Assert.AreEqual(Result.Player1Wins, result);
         }
 
         [Test]
@@ -50,7 +50,7 @@ namespace RockPaperScissors.Business.Tests.OverallScoreCalculatorTests
             var result = _overallScoreCalculator.CalculateOverallWinner(player1.Object, player2.Object);
 
             // Assert
-            Assert.AreEqual(RoundResult.Player2Wins, result);
+            Assert.AreEqual(Result.Player2Wins, result);
         }
 
         [Test]
@@ -67,7 +67,7 @@ namespace RockPaperScissors.Business.Tests.OverallScoreCalculatorTests
             var result = _overallScoreCalculator.CalculateOverallWinner(player1.Object, player2.Object);
 
             // Assert
-            Assert.AreEqual(RoundResult.Draw, result);
+            Assert.AreEqual(Result.Draw, result);
         }
     }
 }

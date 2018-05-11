@@ -21,21 +21,24 @@ namespace RockPaperScissors.Business.DataProvider
                     GameMove.Paper,
                     new GameMoveOutcomes
                     {
-                        Beats = new List<GameMove> {GameMove.Rock}
+                        Beats = new List<GameMove> {GameMove.Rock},
+                        LosesTo = new List<GameMove> {GameMove.Scissors}
                     }
                 },
                 {
                     GameMove.Scissors,
                     new GameMoveOutcomes
                     {
-                        Beats = new List<GameMove> {GameMove.Paper}
+                        Beats = new List<GameMove> {GameMove.Paper},
+                        LosesTo = new List<GameMove> {GameMove.Rock}
                     }
                 },
                 {
                     GameMove.Rock,
                     new GameMoveOutcomes
                     {
-                        Beats = new List<GameMove> {GameMove.Scissors}
+                        Beats = new List<GameMove> {GameMove.Scissors},
+                        LosesTo = new List<GameMove> {GameMove.Paper}
                     }
                 }
             };

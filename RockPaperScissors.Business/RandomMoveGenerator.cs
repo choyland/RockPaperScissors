@@ -3,22 +3,22 @@ using RockPaperScissors.Business.Enum;
 
 namespace RockPaperScissors.Business
 {
-    public static class RandomMoveGenerator
+    public class RandomMoveGenerator : IRandomMoveGenerator
     {
 
         // Random initialized using system clock so safer to use same instance
-        private static readonly Random _random;
+        private static readonly Random Random;
 
         static RandomMoveGenerator()
         {
-            _random = new Random();
+            Random = new Random();
         }
 
-        public static GameMove GetRandomMove()
+        public GameMove GenerateRandomMove()
         {
             var gameMoveLength = System.Enum.GetNames(typeof(GameMove)).Length;
 
-            var randomValidNumber = _random.Next(0, gameMoveLength - 1);
+            var randomValidNumber = Random.Next(0, gameMoveLength - 1);
 
             return (GameMove) randomValidNumber;
         }

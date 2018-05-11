@@ -4,6 +4,6 @@ namespace RockPaperScissors.Business
 {
     public interface IRandomMoveGenerator
     {
-        GameMove GetRandomMove();
+        GameMove GenerateRandomMove();
     }
 }
