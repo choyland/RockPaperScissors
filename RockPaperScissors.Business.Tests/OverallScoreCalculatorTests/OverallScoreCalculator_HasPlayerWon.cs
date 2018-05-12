@@ -1,5 +1,6 @@
 ﻿using Moq;
 using NUnit.Framework;
+using RockPaperScissors.Business.Calculators;
 using RockPaperScissors.Business.Model.Interfaces;
 
 namespace RockPaperScissors.Business.Tests.OverallScoreCalculatorTests

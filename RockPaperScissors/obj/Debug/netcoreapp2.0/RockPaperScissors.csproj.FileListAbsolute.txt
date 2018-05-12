@@ -11,3 +11,17 @@ E:\Samples\RockPaperScissors\RockPaperScissors\obj\Debug\netcoreapp2.0\RockPaper
 E:\Samples\RockPaperScissors\RockPaperScissors\obj\Debug\netcoreapp2.0\RockPaperScissors.pdb
 E:\Samples\RockPaperScissors\RockPaperScissors\bin\Debug\netcoreapp2.0\RockPaperScissors.Business.dll
 E:\Samples\RockPaperScissors\RockPaperScissors\bin\Debug\netcoreapp2.0\RockPaperScissors.Business.pdb
+E:\Projects\RockPaperScissors\RockPaperScissors\obj\Debug\netcoreapp2.0\RockPaperScissors.csprojResolveAssemblyReference.cache
+E:\Projects\RockPaperScissors\RockPaperScissors\obj\Debug\netcoreapp2.0\RockPaperScissors.csproj.CoreCompileInputs.cache
+E:\Projects\RockPaperScissors\RockPaperScissors\obj\Debug\netcoreapp2.0\RockPaperScissors.AssemblyInfoInputs.cache
+E:\Projects\RockPaperScissors\RockPaperScissors\obj\Debug\netcoreapp2.0\RockPaperScissors.AssemblyInfo.cs
+E:\Projects\RockPaperScissors\RockPaperScissors\obj\Debug\netcoreapp2.0\RockPaperScissors.dll
+E:\Projects\RockPaperScissors\RockPaperScissors\obj\Debug\netcoreapp2.0\RockPaperScissors.pdb
+E:\Projects\RockPaperScissors\RockPaperScissors\bin\Debug\netcoreapp2.0\RockPaperScissors.deps.json
+E:\Projects\RockPaperScissors\RockPaperScissors\bin\Debug\netcoreapp2.0\RockPaperScissors.runtimeconfig.json
+E:\Projects\RockPaperScissors\RockPaperScissors\bin\Debug\netcoreapp2.0\RockPaperScissors.runtimeconfig.dev.json
+E:\Projects\RockPaperScissors\RockPaperScissors\bin\Debug\netcoreapp2.0\RockPaperScissors.dll
+E:\Projects\RockPaperScissors\RockPaperScissors\bin\Debug\netcoreapp2.0\RockPaperScissors.pdb
+E:\Projects\RockPaperScissors\RockPaperScissors\bin\Debug\netcoreapp2.0\RockPaperScissors.Business.dll
+E:\Projects\RockPaperScissors\RockPaperScissors\bin\Debug\netcoreapp2.0\RockPaperScissors.Business.pdb
+E:\Projects\RockPaperScissors\RockPaperScissors\obj\Debug\netcoreapp2.0\RockPaperScissors.csproj.CopyComplete

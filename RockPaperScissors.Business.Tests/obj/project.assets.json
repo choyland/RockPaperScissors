@@ -5793,7 +5793,7 @@
       ]
     },
     "System.Xml.XPath/4.3.0": {
-      "sha512": "v1JQ5SETnQusqmS3RwStF7vwQ3L02imIzl++sewmt23VGygix04pEH+FCj1yWb+z4GDzKiljr1W7Wfvrx0YwgA==",
+      "sha512": "Buay7lItaETUlAL0AygyiiSqZ+IBoaA9Hy7Tm3MU9q0jUP39O/N1ZvJIbywXb6O4kjzD5/JPrIj7DxF8OvxYOg==",
       "type": "package",
       "path": "system.xml.xpath/4.3.0",
       "files": [
@@ -5882,41 +5882,42 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\charlie.hoyland\\.nuget\\packages\\": {},
+    "C:\\Users\\charl\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "E:\\Samples\\RockPaperScissors\\RockPaperScissors.Business.Tests\\RockPaperScissors.Business.Tests.csproj",
+      "projectUniqueName": "E:\\Projects\\RockPaperScissors\\RockPaperScissors.Business.Tests\\RockPaperScissors.Business.Tests.csproj",
       "projectName": "RockPaperScissors.Business.Tests",
-      "projectPath": "E:\\Samples\\RockPaperScissors\\RockPaperScissors.Business.Tests\\RockPaperScissors.Business.Tests.csproj",
-      "packagesPath": "C:\\Users\\charlie.hoyland\\.nuget\\packages\\",
-      "outputPath": "E:\\Samples\\RockPaperScissors\\RockPaperScissors.Business.Tests\\obj\\",
+      "projectPath": "E:\\Projects\\RockPaperScissors\\RockPaperScissors.Business.Tests\\RockPaperScissors.Business.Tests.csproj",
+      "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\RockPaperScissors\\RockPaperScissors.Business.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\charlie.hoyland\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\charl\\.dotnet\\NuGetFallbackFolder": {},
         "http://nuget.asandk.com/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\Samples\\RockPaperScissors\\RockPaperScissors.Business\\RockPaperScissors.Business.csproj": {
-              "projectPath": "E:\\Samples\\RockPaperScissors\\RockPaperScissors.Business\\RockPaperScissors.Business.csproj"
+            "E:\\Projects\\RockPaperScissors\\RockPaperScissors.Business\\RockPaperScissors.Business.csproj": {
+              "projectPath": "E:\\Projects\\RockPaperScissors\\RockPaperScissors.Business\\RockPaperScissors.Business.csproj"
             }
           }
         }

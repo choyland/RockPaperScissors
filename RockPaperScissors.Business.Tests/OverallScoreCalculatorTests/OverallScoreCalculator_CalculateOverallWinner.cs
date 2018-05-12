@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Moq;
+﻿using Moq;
 using NUnit.Framework;
-using NUnit.Framework.Internal;
+using RockPaperScissors.Business.Calculators;
 using RockPaperScissors.Business.Enum;
 using RockPaperScissors.Business.Model.Interfaces;
 

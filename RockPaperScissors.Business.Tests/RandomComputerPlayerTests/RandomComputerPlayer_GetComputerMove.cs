@@ -1,6 +1,6 @@
 ﻿using Moq;
 using NUnit.Framework;
-using RockPaperScissors.Business.Model.Implementation;
+using RockPaperScissors.Business.Model;
 
 namespace RockPaperScissors.Business.Tests.RandomComputerPlayerTests
 {
