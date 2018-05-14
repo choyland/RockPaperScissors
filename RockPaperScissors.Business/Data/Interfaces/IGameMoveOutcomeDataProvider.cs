@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using RockPaperScissors.Business.Model;
 
-namespace RockPaperScissors.Business.DataProviders.Interfaces
+namespace RockPaperScissors.Business.Data.Interfaces
 {
     public interface IGameMoveOutcomeDataProvider
     {

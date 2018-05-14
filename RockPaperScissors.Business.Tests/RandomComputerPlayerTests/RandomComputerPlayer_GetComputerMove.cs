@@ -1,23 +1,22 @@
 ﻿using Moq;
 using NUnit.Framework;
 using RockPaperScissors.Business.Model;
+using RockPaperScissors.Business.MoveGenerators.Interfaces;
 
 namespace RockPaperScissors.Business.Tests.RandomComputerPlayerTests
 {
     [TestFixture]
     public class RandomComputerPlayer_GetComputerMove
     {
-        private RandomComputerPlayer _randomComputerPlayer;
-
         [Test]
         public void RandomMoveGeneratorIsCalledOnceWhenGettingComputerMove()
         {
             // Arrange
             var mockRandomMoveGenerator = new Mock<IRandomMoveGenerator>();
-            _randomComputerPlayer = new RandomComputerPlayer(mockRandomMoveGenerator.Object);
+            var randomComputerPlayer = new RandomComputerPlayer(mockRandomMoveGenerator.Object);
 
             //Act
-            _randomComputerPlayer.GetComputerMove();
+            randomComputerPlayer.GetComputerMove();
 
             // Assert
             mockRandomMoveGenerator.Verify(m => m.GenerateRandomMove(), Times.Once);

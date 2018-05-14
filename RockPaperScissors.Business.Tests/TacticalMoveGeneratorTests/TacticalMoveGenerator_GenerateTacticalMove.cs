@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using Moq;
 using NUnit.Framework;
-using RockPaperScissors.Business.DataProviders.Interfaces;
+using RockPaperScissors.Business.Data;
+using RockPaperScissors.Business.Data.Interfaces;
 using RockPaperScissors.Business.Enum;
 using RockPaperScissors.Business.Model;
 using RockPaperScissors.Business.MoveGenerators;

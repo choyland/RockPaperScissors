@@ -25,3 +25,12 @@ E:\Projects\RockPaperScissors\RockPaperScissors.Business\obj\Debug\netstandard2.
 E:\Projects\RockPaperScissors\RockPaperScissors.Business\obj\Debug\netstandard2.0\RockPaperScissors.Business.AssemblyInfo.cs
 E:\Projects\RockPaperScissors\RockPaperScissors.Business\obj\Debug\netstandard2.0\RockPaperScissors.Business.dll
 E:\Projects\RockPaperScissors\RockPaperScissors.Business\obj\Debug\netstandard2.0\RockPaperScissors.Business.pdb
+C:\projects-git\RockPaperScissors\RockPaperScissors.Business\bin\Debug\netstandard2.0\RockPaperScissors.Business.deps.json
+C:\projects-git\RockPaperScissors\RockPaperScissors.Business\bin\Debug\netstandard2.0\RockPaperScissors.Business.dll
+C:\projects-git\RockPaperScissors\RockPaperScissors.Business\bin\Debug\netstandard2.0\RockPaperScissors.Business.pdb
+C:\projects-git\RockPaperScissors\RockPaperScissors.Business\obj\Debug\netstandard2.0\RockPaperScissors.Business.csprojResolveAssemblyReference.cache
+C:\projects-git\RockPaperScissors\RockPaperScissors.Business\obj\Debug\netstandard2.0\RockPaperScissors.Business.csproj.CoreCompileInputs.cache
+C:\projects-git\RockPaperScissors\RockPaperScissors.Business\obj\Debug\netstandard2.0\RockPaperScissors.Business.AssemblyInfoInputs.cache
+C:\projects-git\RockPaperScissors\RockPaperScissors.Business\obj\Debug\netstandard2.0\RockPaperScissors.Business.AssemblyInfo.cs
+C:\projects-git\RockPaperScissors\RockPaperScissors.Business\obj\Debug\netstandard2.0\RockPaperScissors.Business.dll
+C:\projects-git\RockPaperScissors\RockPaperScissors.Business\obj\Debug\netstandard2.0\RockPaperScissors.Business.pdb

@@ -2,8 +2,8 @@
 using Autofac;
 using RockPaperScissors.Business.Calculators;
 using RockPaperScissors.Business.Calculators.Interfaces;
-using RockPaperScissors.Business.DataProviders;
-using RockPaperScissors.Business.DataProviders.Interfaces;
+using RockPaperScissors.Business.Data;
+using RockPaperScissors.Business.Data.Interfaces;
 using RockPaperScissors.Business.Model;
 using RockPaperScissors.Business.Model.Interfaces;
 using RockPaperScissors.Business.MoveGenerators;

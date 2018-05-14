@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using RockPaperScissors.Business.DataProviders.Interfaces;
+using RockPaperScissors.Business.Data.Interfaces;
 using RockPaperScissors.Business.Enum;
-using RockPaperScissors.Business.Model;
 
-namespace RockPaperScissors.Business.DataProviders
+namespace RockPaperScissors.Business.Data
 {
     public class GameMoveOutcomeDataProvider : IGameMoveOutcomeDataProvider
     {

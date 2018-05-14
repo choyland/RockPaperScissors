@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using RockPaperScissors.Business.Enum;
 
-namespace RockPaperScissors.Business.Model
+namespace RockPaperScissors.Business.Data
 {
     public class GameMoveOutcomes
     {

@@ -1592,7 +1592,7 @@
     "System.Xml.XPath/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Buay7lItaETUlAL0AygyiiSqZ+IBoaA9Hy7Tm3MU9q0jUP39O/N1ZvJIbywXb6O4kjzD5/JPrIj7DxF8OvxYOg==",
+      "sha512": "sha512-v1JQ5SETnQusqmS3RwStF7vwQ3L02imIzl++sewmt23VGygix04pEH+FCj1yWb+z4GDzKiljr1W7Wfvrx0YwgA==",
       "path": "system.xml.xpath/4.3.0",
       "hashPath": "system.xml.xpath.4.3.0.nupkg.sha512"
     },

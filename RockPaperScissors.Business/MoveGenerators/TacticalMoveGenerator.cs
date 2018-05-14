@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using RockPaperScissors.Business.DataProviders.Interfaces;
+using RockPaperScissors.Business.Data.Interfaces;
 using RockPaperScissors.Business.Enum;
 using RockPaperScissors.Business.MoveGenerators.Interfaces;
 

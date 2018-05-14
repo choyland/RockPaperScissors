@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using RockPaperScissors.Business.Calculators.Interfaces;
-using RockPaperScissors.Business.DataProviders.Interfaces;
+using RockPaperScissors.Business.Data.Interfaces;
 using RockPaperScissors.Business.Enum;
 
 namespace RockPaperScissors.Business.Calculators
